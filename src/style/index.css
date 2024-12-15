@@ -1,16 +1,21 @@
 .filters {
   background: white;
   width: 100%;
+  display: flex;
+  justify-content: center; /* Centra los selectores horizontalmente */
+  padding: 10px 0; /* Añade un poco de espacio alrededor */
 }
 .filters li {
   display: inline-block;
   max-width: 80px;
   padding: 3px;
+  margin: 0 10px; /* Añade espacio entre los selectores */
 }
 .filters li label {
   display: block;
   font-size: 12px;
   font-weight: 900;
+  text-align: center; /* Centra el texto de las etiquetas */
 }
 .filters li input {
   width: 100%;
