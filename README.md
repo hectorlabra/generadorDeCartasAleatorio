@@ -1,24 +1,40 @@
-<!-- filepath: /Users/hectorignaciolabrabarros/Documents/proyectosProgramacion/4Geeks/Proyectos/bootcamp2/exercise-conditional-profile-card/README.es.md -->
-<!--hide-->
-# Tarjeta de Perfil Condicional
-<!--endhide-->
+# Random Card Generator
 
-## Descripción del Proyecto
+## 🎴 Descripción
 
-Este proyecto es una aplicación web que genera una tarjeta de perfil condicional. La tarjeta de perfil se actualiza dinámicamente en función de los datos proporcionados por el usuario a través de varios selectores y campos de entrada. La aplicación permite personalizar la tarjeta de perfil con una imagen de fondo, una foto de perfil, información personal y enlaces a redes sociales.
+Generador de cartas de póker aleatorias construido con JavaScript vanilla. La aplicación genera una carta nueva cada vez que se recarga la página o se presiona el botón, incluyendo funcionalidades adicionales como temporizador automático y personalización de dimensiones.
 
-## Características
+## ⚡ Características Principales
 
-- **Personalización de la Tarjeta**: Los usuarios pueden personalizar la tarjeta de perfil con su nombre, apellido, rol, ciudad y país.
-- **Imagen de Fondo y Foto de Perfil**: Los usuarios pueden añadir una imagen de fondo y una foto de perfil.
-- **Posición de Redes Sociales**: Los usuarios pueden elegir la posición de la barra de redes sociales (izquierda o derecha).
-- **Modo Oscuro**: La aplicación incluye un modo oscuro que se puede activar y desactivar con un icono.
-- **Interfaz de Usuario Moderna**: La aplicación utiliza una tipografía moderna y un diseño minimalista para una mejor experiencia de usuario.
+- Generación aleatoria de cartas
+- Actualización manual mediante botón
+- Temporizador automático cada 10 segundos
+- Personalización de dimensiones de la carta
+- Diseño responsive y minimalista
 
-## Requisitos
+## 🛠️ Tecnologías
 
-Asegúrate de tener instalado Node.js en tu computadora. Puedes verificarlo ejecutando el siguiente comando en tu terminal:
+- HTML5
+- CSS3
+- JavaScript Vanilla
+- Bootstrap 5
+
+## 🚀 Uso
+
+1. Carga la página para ver una carta aleatoria
+2. Usa el botón "Generar Nueva Carta" para una nueva carta
+3. La carta se actualiza automáticamente cada 10 segundos
+4. Personaliza las dimensiones usando los inputs
+
+
+## ⚙️ Instalación
 
 ```bash
-$ node -v
+# Clonar el repositorio
+git clone [URL_del_repositorio]
 
+# Instalar dependencias
+npm install
+
+# Iniciar servidor de desarrollo
+npm run start
