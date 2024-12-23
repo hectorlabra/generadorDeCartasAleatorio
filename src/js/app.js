@@ -1,4 +1,3 @@
-// Estructuras de datos
 const values = [
   "A",
   "2",
@@ -22,7 +21,6 @@ const suitSymbols = {
   clubs: "♣"
 };
 
-// Funciones core
 const generateRandomCard = () => {
   const randomValue = values[Math.floor(Math.random() * values.length)];
   const randomSuit = suits[Math.floor(Math.random() * suits.length)];
@@ -38,31 +36,27 @@ const renderCard = card => {
   const isRed = card.suit === "hearts" || card.suit === "diamonds";
   const color = isRed ? "text-danger" : "text-dark";
 
-  [topSuit, number, bottomSuit].forEach(el => {
-    el.className = `position-absolute ${color}`;
-  });
+  cardElement.className = "card bg-white";
+  topSuit.className = `position-absolute top-0 start-0 m-2 fs-4 ${color}`;
+  number.className = `position-absolute top-50 start-50 translate-middle display-4 fw-bold ${color}`;
+  bottomSuit.className = `position-absolute bottom-0 end-0 m-2 fs-4 ${color} rotate-180`;
 
   topSuit.innerHTML = suitSymbols[card.suit];
   number.innerHTML = card.value;
   bottomSuit.innerHTML = suitSymbols[card.suit];
 };
 
-// Event Listeners y inicialización
 window.onload = () => {
-  // Generar carta inicial
   renderCard(generateRandomCard());
 
-  // Botón de generación
-  document.getElementById("generate")?.addEventListener("click", () => {
+  document.getElementById("generate").addEventListener("click", () => {
     renderCard(generateRandomCard());
   });
 
-  // Temporizador (cada 10 segundos)
   setInterval(() => {
     renderCard(generateRandomCard());
   }, 10000);
 
-  // Manejo de dimensiones
   const updateDimensions = () => {
     const width = document.getElementById("width").value;
     const height = document.getElementById("height").value;
@@ -72,10 +66,8 @@ window.onload = () => {
     if (height) card.style.height = `${height}px`;
   };
 
-  document
-    .getElementById("width")
-    ?.addEventListener("change", updateDimensions);
+  document.getElementById("width").addEventListener("change", updateDimensions);
   document
     .getElementById("height")
-    ?.addEventListener("change", updateDimensions);
+    .addEventListener("change", updateDimensions);
 };
