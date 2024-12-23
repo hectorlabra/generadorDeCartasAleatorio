@@ -1,6 +1,7 @@
 body {
-  background-color: #35654d;
-  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M54.627 0l.83.828-1.415 1.415L51.8 0h2.827zM5.373 0l-.83.828L5.96 2.243 8.2 0H5.374zM48.97 0l3.657 3.657-1.414 1.414L46.143 0h2.828zM11.03 0L7.372 3.657 8.787 5.07 13.857 0H11.03zm32.284 0L49.8 6.485 48.384 7.9l-7.9-7.9h2.83zM16.686 0L10.2 6.485 11.616 7.9l7.9-7.9h-2.83zM38.284 0l7.9 7.9-1.415 1.413-7.9-7.9h1.414zM20.687 0l-7.9 7.9 1.415 1.413 7.9-7.9h-1.414zM3.515 0L0 3.515 1.414 4.93 4.93 1.414 3.515 0zM56.485 0L60 3.515 58.586 4.93 55.07 1.414 56.485 0zM4.93 58.586L1.414 55.07 0 56.485 3.515 60 4.93 58.586zM58.586 55.07l3.515 3.515L60 56.485 56.485 60l2.1-2.1z' fill='%23307a4d' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+  background: linear-gradient(135deg, #35654d 0%, #2c5530 100%);
+  min-height: 100vh;
+  color: #ffffff;
 }
 
 .container {
@@ -8,40 +9,30 @@ body {
   border-radius: 15px;
   padding: 20px;
   margin-top: 20px;
-}
-
-#card {
-  border-radius: 15px;
-  box-shadow: 
-      0 4px 8px rgba(0,0,0,0.2),
-      0 8px 16px rgba(0,0,0,0.1),
-      0 16px 32px rgba(0,0,0,0.1);
-  background-color: white;
-  transition: transform 0.3s ease;
-}
-
-#card:hover {
-  transform: translateY(-5px);
-}
-
-h1, .text-muted {
-  color: #ffffff !important;
+  backdrop-filter: blur(5px);
 }
 
 .btn-primary {
-  background-color: #2c5530;
-  border-color: #2c5530;
+  background-color: #d64c5f;
+  border-color: #d64c5f;
+  transition: all 0.3s ease;
 }
 
 .btn-primary:hover {
-  background-color: #1e3b21;
-  border-color: #1e3b21;
+  background-color: #c13e50;
+  border-color: #c13e50;
 }
 
-footer a {
+h1,
+p,
+.text-muted {
   color: #ffffff !important;
 }
 
+footer a {
+  color: #e17f8b !important;
+}
+
 footer a:hover {
-  color: #dddddd !important;
+  color: #ffffff !important;
 }
